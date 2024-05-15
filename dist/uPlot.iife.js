@@ -1229,7 +1229,7 @@ var uPlot = (function () {
 	function timeSeriesStamp(stampCfg, fmtDate) {
 		return fmtDate(stampCfg);
 	}
-	const _timeSeriesStamp = '{YYYY}-{MM}-{DD} {h}:{mm}{aa}';
+	const _timeSeriesStamp = '{DD}-{MM}-{YYYY} {hh}:{mm}';
 
 	function timeSeriesVal(tzDate, stamp) {
 		return (self, val, seriesIdx, dataIdx) => dataIdx == null ? LEGEND_DISP : stamp(tzDate(val));

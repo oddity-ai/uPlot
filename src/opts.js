@@ -328,7 +328,7 @@ export function timeSeriesStamp(stampCfg, fmtDate) {
 	return fmtDate(stampCfg);
 };
 
-export const _timeSeriesStamp = '{YYYY}-{MM}-{DD} {h}:{mm}{aa}';
+export const _timeSeriesStamp = '{DD}-{MM}-{YYYY} {hh}:{mm}';
 
 export function timeSeriesVal(tzDate, stamp) {
 	return (self, val, seriesIdx, dataIdx) => dataIdx == null ? LEGEND_DISP : stamp(tzDate(val));
