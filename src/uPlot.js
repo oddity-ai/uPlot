@@ -629,9 +629,6 @@ export default function uPlot(opts, data, then) {
 				text.style.color = s.width > 0 ? markers.stroke(self, i) : markers.fill(self, i);
 
 			onMouse("click", label, e => {
-				if (cursor._lock)
-					return;
-
 				setCursorEvent(e);
 
 				let seriesIdx = series.indexOf(s);
